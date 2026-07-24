@@ -103,6 +103,39 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+.videoPoster {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #181313;
+}
+
+.campaignVideo {
+  position: relative;
+}
+
+.campaignPlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(255, 255, 255, .65);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .55);
+  color: #fff;
+  font-size: 19px;
+  line-height: 1;
+  backdrop-filter: blur(8px);
+}
+
+.campaignPlay:hover {
+  border-color: #d22222;
+  background: #a61d20;
+}
+
 .profileScan {
   position: absolute;
   z-index: 1;
